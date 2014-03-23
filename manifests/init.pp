@@ -44,9 +44,52 @@ class font::source-code-pro {
   }
 }
 
+class font::clear-sans {
+  file { 'ClearSans-Bold.ttf':
+    path   => '/Users/maeick/Library/Fonts/ClearSans-Bold.ttf',
+    ensure => 'present',
+    source => 'puppet:///modules/font/clearsans-1.00/ttf/ClearSans-Bold.ttf'
+  }
+  file { 'ClearSans-BoldItalic.ttf':
+    path   => '/Users/maeick/Library/Fonts/ClearSans-BoldItalic.ttf',
+    ensure => 'present',
+    source => 'puppet:///modules/font/clearsans-1.00/ttf/ClearSans-BoldItalic.ttf'
+  }
+  file { 'ClearSans-Italic.ttf':
+    path   => '/Users/maeick/Library/Fonts/ClearSans-Italic.ttf',
+    ensure => 'present',
+    source => 'puppet:///modules/font/clearsans-1.00/ttf/ClearSans-Italic.ttf'
+  }
+  file { 'ClearSans-Light.ttf':
+    path   => '/Users/maeick/Library/Fonts/ClearSans-Light.ttf',
+    ensure => 'present',
+    source => 'puppet:///modules/font/clearsans-1.00/ttf/ClearSans-Light.ttf'
+  }
+  file { 'ClearSans-Medium.ttf':
+    path   => '/Users/maeick/Library/Fonts/ClearSans-Medium.ttf',
+    ensure => 'present',
+    source => 'puppet:///modules/font/clearsans-1.00/ttf/ClearSans-Medium.ttf'
+  }
+  file { 'ClearSans-MediumItalic.ttf':
+    path   => '/Users/maeick/Library/Fonts/ClearSans-MediumItalic.ttf',
+    ensure => 'present',
+    source => 'puppet:///modules/font/clearsans-1.00/ttf/ClearSans-MediumItalic.ttf'
+  }
+  file { 'ClearSans-Regular.ttf':
+    path   => '/Users/maeick/Library/Fonts/ClearSans-Regular.ttf',
+    ensure => 'present',
+    source => 'puppet:///modules/font/clearsans-1.00/ttf/ClearSans-Regular.ttf'
+  }
+  file { 'ClearSans-Thin.ttf':
+    path   => '/Users/maeick/Library/Fonts/ClearSans-Thin.ttf',
+    ensure => 'present',
+    source => 'puppet:///modules/font/clearsans-1.00/ttf/ClearSans-Thin.ttf'
+  }
+}
+
+
 
 #Private Fonts
-
 class font::comicbookfonts {
   file { 'CCBryanTalbotBoldItalic.otf':
     path   => '/Users/maeick/Library/Fonts/CCBryanTalbotBoldItalic.otf',
